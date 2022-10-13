@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 9px;
+}
+
+.calculator-view {
+  width: 385px;
+  height: auto;
+  border-radius: 15px;
+  background-color: #000000fe;
+  display: flex;
+  margin: 80px auto;
+  padding: 35px 0;
+}
+.viewport {
+  width: 90%;
+  height: 70%;
+}
+.display {
+  width: 100%;
+}
+input {
+  border: none;
+  outline: none;
+  font-size: 3rem;
+  width: 100%;
+  text-align: right;
+  color: black;
+  padding-right: 20px;
+}
+.keypad {
+  width: 97%;
+  margin-top: 40px;
+}
+button {
+  border: none;
+  border-radius: 20px;
+  width: 75px;
+  height: 75px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+button.fx-key {
+  background-color: #a5a5a5;
+  color: #000;
+}
+button.fx-key:hover {
+  background-color: #c4c4c4;
+}
+button.numeric-key {
+  background-color: #333;
+}
+button.op-key {
+  background-color: #a2ff20a9;
+  margin-left: 10px;
+  font-size: 3rem;
+}
+button.op-key:hover {
+  background-color: #a2ff208d;
+}
